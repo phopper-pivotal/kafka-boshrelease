@@ -6,7 +6,7 @@ release:
   version: latest
 
 compilation:
-  workers: 2
+  workers: 3
   network: default
   cloud_properties: {}
   reuse_compilation_vms: true
@@ -21,12 +21,13 @@ resource_pools:
  - name: infrastructure1
    network: default
    stemcell:
-    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
-    version: latest
+    name: bosh-vsphere-esxi-ubuntu-trusty-go_agent
+    os: ubuntu-trusty
+    version: '3263.8'
    cloud_properties: {}
 
 networks:
-  - name: default
+  - name: VMNetwork
     subnets:
       # network with static ip used for web
       - range: 10.244.8.0/30

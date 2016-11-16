@@ -4,7 +4,7 @@
 BIN_DIR=/var/vcap/packages/broker/bin
 export CFGDIR=/var/vcap/jobs/broker/config
 
-export JAVA_HOME=/var/vcap/packages/jdk7
+export JAVA_HOME=/var/vcap/packages/jdk8
 export PATH=$PATH:$JAVA_HOME/bin:$BIN_DIR
 PIDFILE=${BIN_DIR}/kafka.pid
 

@@ -1,5 +1,5 @@
 set -e
-archive="zookeeper/zookeeper-3.4.6.tar.gz"
+archive="zookeeper/zookeeper-3.4.9.tar.gz"
 if [[ -f $archive ]] ; then
   echo "Archive found"
 else
@@ -8,4 +8,4 @@ else
 fi
 
 tar zxf $archive
-cp -R zookeeper-3.4.6/* ${BOSH_INSTALL_TARGET}
+cp -R zookeeper-3.4.9/* ${BOSH_INSTALL_TARGET}

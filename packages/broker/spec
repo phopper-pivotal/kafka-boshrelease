@@ -2,6 +2,6 @@
 name: broker
 
 dependencies:
- - jdk7
+ - jdk8
 files:
- - broker/kafka_2.9.2-0.8.1.1.tgz
+ - broker/confluent-3.0.0-2.11.tar.gz
